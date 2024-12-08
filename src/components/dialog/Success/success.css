@@ -1,0 +1,53 @@
+.wrapper_successAlarm {
+    width: 30vw;
+    height: 40vh;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    position:absolute;
+    top: calc(100vh/2 - 40vh/2);
+    left: calc(100vw/2 - 30vw/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+}
+.wrapper_titlesuccess {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.wrapper_mainsuccess{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper_mainsuccess img {
+    width: 5rem;
+    height: 5rem;
+}
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .wrapper_successAlarm {
+        width: 70vw;
+        height: 20vh;
+        top: calc(100vh/2 - 20vh/2);
+        left: calc(100vw/2 - 70vw/2);
+    }
+}
+@media only screen and (max-width:739px) {
+    .wrapper_successAlarm {
+        width: 80vw;
+        height: 30vh;
+        top: calc(100vh/2 - 30vh/2);
+        left: calc(100vw/2 - 80vw/2);
+    }
+    .wrapper_mainsuccess img {
+        width: 3rem;
+        height: 3rem;
+    }
+}

@@ -1,0 +1,101 @@
+.wrapper_messageAlarm {
+    width: 30vw;
+    height: 40vh;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    position:absolute;
+    top: calc(100vh/2 - 40vh/2);
+    left: calc(100vw/2 - 30vw/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+}
+.Title {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Title img {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+}
+.Title div {
+    width: calc(100% - 3.7rem);
+}
+.Title div h6, h4 {
+    margin: 1rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper_message {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.wrapper_message input {
+    width: 96%;
+    height: 60%;
+    outline: none;
+    font-size: 1.4rem;
+    padding: 0 0.5rem;
+    color: grey;
+    border-radius: 0.5rem;
+}
+.wrapper_footer {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.wrapper_footer button {
+    width: 30%;
+    height: 60%;
+    background-color: rgba(151, 151, 151,1);
+    border-color: transparent;
+    border-radius: 2em;
+    color: #ffffff;
+    outline: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .wrapper_messageAlarm {
+        width: 70vw;
+        height: 20vh;
+        top: calc(100vh/2 - 20vh/2);
+        left: calc(100vw/2 - 70vw/2);
+    }
+}
+@media only screen and (max-width: 739px){
+    .wrapper_messageAlarm {
+        width: 80vw;
+        height: 30vh;
+        top: calc(100vh/2 - 30vh/2);
+        left: calc(100vw/2 - 80vw/2);
+    }
+    .Title div h6, h4 {
+        margin: 0.5rem 0;
+    }
+    .Title img {
+        width: 2rem;
+        height: 2rem;
+        margin-top: 1.33rem;
+    }
+    .wrapper_message {
+        margin-top: 2rem;
+    }
+    .wrapper_message input {
+        height: 50%;
+        font-size: 1rem
+    }
+    .wrapper_footer button {
+        font-size: 0.7rem;
+    }
+}

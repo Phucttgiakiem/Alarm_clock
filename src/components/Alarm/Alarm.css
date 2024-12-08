@@ -1,0 +1,110 @@
+.wrappertimer{
+    width: 30%;
+    height: 80%;
+    padding: 3.12em 3em;
+    position: absolute;
+    left: calc(100vw/2 - 30%/2);
+    top: calc(100vh/2 - 80%/2);
+    background-color: rgba(255, 255, 255,0.4);
+    border-radius: 5%;
+}
+
+.timer-display {
+    font-size: 2.18em;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+}
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+.inputs input {
+width: 2.8em;
+font-size: 1.3em;
+border: 1px solid #000000;
+border-radius: 0.3em;
+padding: 0.4em 0.2em;
+}
+#set {
+    background-color: #377dff;
+    border: none;
+    padding: 0.9em 1.8em;
+    display: block;
+    margin: 1.5em auto 0 auto;
+    border-radius: 2em;
+    color: #ffffff;
+}
+.parentactiveAlarm {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.activeAlarms {
+    max-height: 32vh; 
+    overflow-y: auto; 
+}
+/* Tùy chỉnh thanh cuộn */
+.activeAlarms::-webkit-scrollbar {
+    width: 8px; /* Chiều rộng của thanh cuộn */
+}
+
+/* Tùy chỉnh thanh cuộn (phần thanh trượt) */
+.activeAlarms::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255,0.4); /* Màu thanh cuộn */
+    border-radius: 10px; /* Bo góc thanh cuộn */
+}
+
+/* Tùy chỉnh thanh cuộn khi không có hoạt động */
+.activeAlarms::-webkit-scrollbar-track {
+    background-color: transparent; /* Màu nền của vùng cuộn */
+}
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+    .wrappertimer {
+        width: 60%;
+        height: 70%;
+        left: calc(100vw/2 - 60%/2);
+        top: calc(100vh/2 - 70%/2);
+        border-radius: 20px;
+    }
+    .activeAlarms {
+        max-height: 45vh;
+    }
+    .timer-display {
+        font-size: 3em;
+    }
+    .inputs {
+        gap: 2rem;
+    }
+    .inputs input {
+        width: 5.6rem;
+    }
+    #set {
+        padding: 1.3em 3em;
+        display: block;
+        margin: 3em auto 0 auto;
+        border-radius: 2em;
+        color: #ffffff;
+        font-size: 1rem;
+    }
+    .activeAlarms{
+        margin-top: 3rem;
+    }
+}
+@media only screen and (max-width: 739px) {
+    .wrappertimer {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(255,255,255);
+        border-radius: 0;
+        left: 0;
+        top:0;
+    }
+    .timer-display {
+        font-size: 2.5em;
+    }
+    .activeAlarms {
+        max-height: 50vh;
+    } 
+}

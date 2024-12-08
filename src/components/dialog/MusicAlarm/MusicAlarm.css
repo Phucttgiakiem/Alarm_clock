@@ -1,0 +1,79 @@
+.wrapper_musicAlarm {
+    width: 30vw;
+    height: 40vh;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    position:absolute;
+    top: calc(100vh/2 - 40vh/2);
+    left: calc(100vw/2 - 30vw/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+}
+.Title_musicalarm {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.Title_musicalarm h4 {
+    margin: 0;
+}
+.main_musicalarm {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.main_musicalarm select {
+    width: 100%;
+    height: 30%;
+    outline: none;
+    border-color: gray;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+}
+.footer_musicalarm {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_musicalarm button {
+    width: 30%;
+    height: 60%;
+    background-color: rgba(151, 151, 151,1);
+    border-color: transparent;
+    border-radius: 2em;
+    color: #ffffff;
+    outline: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.footer_musicalarm button:first-child {
+    margin-right: 1rem;
+}
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .wrapper_musicAlarm {
+        width: 70vw;
+        height: 20vh;
+        top: calc(100vh/2 - 20vh/2);
+        left: calc(100vw/2 - 70vw/2);
+    }
+}
+@media only screen and (max-width: 739px) {
+    .wrapper_musicAlarm {
+        width: 80vw;
+        height: 30vh;
+        top: calc(100vh/2 - 30vh/2);
+        left: calc(100vw/2 - 80vw/2);
+    }
+    .footer_musicalarm button {
+        font-size: 0.7rem;
+    }
+}

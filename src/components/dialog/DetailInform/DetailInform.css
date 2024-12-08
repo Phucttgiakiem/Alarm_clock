@@ -1,0 +1,59 @@
+.wrapper_DetailInform {
+    width: 30vw;
+    height: 40vh;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    position:absolute;
+    top: calc(100vh/2 - 40vh/2);
+    left: calc(100vw/2 - 30vw/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+}
+.wrapper_Detailtitle {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper_footerDetail {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn_Off_Detail {
+    width: 30%;
+    height: 60%;
+    background-color: #377dff;
+    border-color: transparent;
+    border-radius: 2em;
+    color: #ffffff;
+    outline: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .wrapper_DetailInform {
+        width: 70vw;
+        height: 20vh;
+        top: calc(100vh/2 - 20vh/2);
+        left: calc(100vw/2 - 70vw/2);
+    }
+}
+@media only screen and (max-width: 739px) {
+    .wrapper_DetailInform  {
+        width: 80vw;
+        height: 30vh;
+        top: calc(100vh/2 - 30vh/2);
+        left: calc(100vw/2 - 80vw/2);
+    }
+    .btn_Off_Detail {
+        font-size: 1rem;
+    }
+}

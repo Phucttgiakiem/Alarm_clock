@@ -1,0 +1,75 @@
+.alarm {
+    display: grid;
+    grid-template-columns: 9fr 2fr 1fr 1fr;
+    gap: 1em;
+    margin-top: 1.5em;
+    align-items: center;
+    border-bottom: 1px solid #898f9b;
+    padding-bottom: 0.6em;
+  }
+  .alarm input[type="checkbox"] {
+    appearance: none;
+    height: 2em;
+    width: 3.75em;
+    background-color: #e2e2ec;
+    border-radius: 1.25em;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+  }
+  .alarm input[type="checkbox"]:before {
+    position: absolute;
+    content: "";
+    background-color: #757683;
+    height: 1.43em;
+    width: 1.43em;
+    border-radius: 50%;
+    top: 0.25em;
+    left: 0.25em;
+  }
+  .alarm input[type="checkbox"]:checked {
+    background-color: #d2e2ff;
+  }
+  .alarm input[type="checkbox"]:checked:before {
+    background-color: #377dff;
+    left: 2em;
+  }
+  .deleteButton {
+    background-color: transparent;
+    font-size: 1.5em;
+    color: #377dff;
+    border: none;
+    cursor: pointer;
+  }
+  .noteButton{
+    background-color: transparent;
+    font-size: 1.5em;
+    color: #377dff;
+    border: none;
+    cursor: pointer;
+  }
+.alarm span {
+  font-size: 1.7rem;
+}
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+    .alarm {
+        gap:1.3em
+    }
+    .alarm span {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 739px) {
+   .alarm {
+      width: 100%;
+   }
+   .alarm span {
+      font-size:1.2rem;
+   }
+   .deleteButton {
+      font-size: 1.1rem;
+   }
+   .noteButton {
+      font-size: 1.2rem;
+   }
+}

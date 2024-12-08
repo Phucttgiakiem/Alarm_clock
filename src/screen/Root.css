@@ -1,0 +1,18 @@
+.wrapper {
+    background-image: url("/public/img_alarm.jpg");
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-size: cover;  /* Đảm bảo ảnh nền sẽ bao phủ toàn bộ khu vực */
+    background-repeat: no-repeat;  /* Ngừng việc lặp lại ảnh nền */
+}
+
+/* Media query cho các thiết bị có chiều rộng từ 740px đến 1023px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .wrapper {
+         /* Đảm bảo ảnh nền co giãn vừa vặn */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+} 
