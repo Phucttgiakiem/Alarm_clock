@@ -1,1 +1,1 @@
-# Alarm_clock
+# The application is a tool that helps users set alarm times as well as remind them when to do something conveniently right on the website without having to download and install on the app. smart electronic devices, etc
